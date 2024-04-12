@@ -17,10 +17,11 @@ export default function Dictionary(props) {
           alert(data.message)
         }
       })
-      .catch(() => {
-        alert(
-          "Oops! An error occured, please check your internet connection and try again."
-        );
+      .catch((error) => {
+        console.log(error);
+        // alert(
+        //   "Oops! An error occured, please check your internet connection and try again."
+        // );
       });
   }, [props.trigger]);
 
